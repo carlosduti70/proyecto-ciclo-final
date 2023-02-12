@@ -1,0 +1,1107 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+margin: 0;
+padding: 0;
+font-family: 'roboto',sans-serif;
+}
+
+
+h1{ font-size: 3.5em; }
+h2{ font-size: 2.3em; }
+h3{ font-size: 2em; }
+p{ font-size: 1.25em; }
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+button:hover{
+    background-color: rgb(77, 25, 126);
+}
+
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+.color-acento{
+    color: blueviolet;
+}
+
+.contenedores h2{
+    font-size: 2.5em;
+}
+
+
+
+
+header{
+    background-color: rgb(245, 245, 245);
+    position: fixed;
+    display: flex;
+}
+header .logo{
+    margin: 0;
+    padding: 25px 3px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1em;
+}
+header .container{
+    display: flex;
+    align-items:flex-start
+}
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    
+}
+.menu-horizontal > li > a{
+    display: block;
+    padding: 5px 7px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.menu-horizontal > li >a:hover{
+    color: blueviolet;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical > li >a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 13px 15px;
+}
+.menu-vertical > li >a:hover{
+    color: blueviolet;
+}
+nav a{
+    font-size: .5em;
+
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+
+
+
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )    
+    ,url(imagenes/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#hero h1{
+    color: white;
+}
+#hero button{
+    font-size: 1.75em;
+}
+
+/* #registro{
+
+} */
+#registro .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+
+
+#herramientas h3{
+    margin-top: 30px;
+}
+
+#herramientas a{
+    color: white;
+    text-decoration: none;
+}
+#materiales a{
+    color: white;
+    text-decoration: none;
+}
+
+.contenedores{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+.contenedores .container{
+    padding: 150px 12px;
+}
+
+.contenedores p{
+    display: none;
+}
+.contenedores .carta{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+/* imagenes del menu */
+
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )    
+    ,url(imagenes/menu/herramientas.png);
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )    
+    ,url(imagenes/menu/materiales.png);
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )    
+    ,url(imagenes/menu/accesorios.png);
+}
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )    
+    ,url(imagenes/menu/empleados.png);
+}
+.carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )    
+    ,url(imagenes/menu/proyectos.png);
+}
+
+
+
+
+
+
+/* imagenes de herramientas */
+
+
+
+
+
+
+
+#herramientas .carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/1_ingleteadora.jpg)
+}
+#herramientas .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/2_sierra_de_banco.png)
+}
+#herramientas .carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/3_sierra_de_mesa.png)
+}
+#herramientas .carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/4_caladora.jpg)
+}
+#herramientas .carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/5_tupi.png)
+}
+#herramientas .carta:nth-child(6){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/6_router.png)
+}
+#herramientas .carta:nth-child(7){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/7_circular_de_mano.png)
+}
+#herramientas .carta:nth-child(8){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/8_taladros_inalambricos.png.jpg)
+}
+#herramientas .carta:nth-child(9){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/9_taladros_alambricos.png)
+}
+#herramientas .carta:nth-child(10){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/10_amoladora.jpg)
+}
+#herramientas .carta:nth-child(11){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/11_graina.png)
+}
+#herramientas .carta:nth-child(12){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/12_dremel.png)
+}
+#herramientas .carta:nth-child(13){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/13_comprensor.png)
+}
+#herramientas .carta:nth-child(14){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/14_metro_lacer.png)
+}
+#herramientas .carta:nth-child(15){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/15_bibradora.png)
+}
+
+
+
+
+
+
+
+
+#electricas{
+    scroll-margin-top: 120px;
+
+}
+
+#manuales{
+    scroll-margin-top: 200px;
+}
+#manuales .carta:nth-child(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/16_pistola\ de\ clavos.png)
+}
+#manuales .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/17_cafetera.png)
+}
+#manuales .carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/18_nivel_de_burbuja.png)
+}
+#manuales .carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/19_martillo.png)
+}
+#manuales .carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/20_playo)
+}
+#manuales .carta:nth-child(6){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/21_prensas.png)
+}
+#manuales .carta:nth-child(7){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/22_flexometro.png)
+}
+#manuales .carta:nth-child(8){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/23_desarmador.png)
+}
+#manuales .carta:nth-child(9){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/24_escuadra.png)
+}
+#manuales .carta:nth-child(10){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/25_falsa_escuadra.png)
+}
+#manuales .carta:nth-child(11){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/26_pistola_de_silicon.png)
+}
+#manuales .carta:nth-child(12){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/27_formon.png)
+}
+#manuales .carta:nth-child(13){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/28_cinturon_de_herramientas.png)
+}
+#manuales .carta:nth-child(14){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/29_juego_de_copas.png)
+}
+#manuales .carta:nth-child(15){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/30_caja_de_herramientas.png)
+}
+#manuales .carta:nth-child(16){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/31_extension.png)
+}
+#manuales .carta:nth-child(17){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/herramientas/32_metro_lacer.png)
+}
+
+
+
+
+
+
+/* imaganes de los materiales */
+
+
+
+
+
+#materiales .carta:nth-child(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/1_melamina.png)
+}
+#materiales .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/2_MDF.png)
+}
+#materiales .carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/3_playwood.png)
+}
+#materiales .carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/4_madera.png)
+}
+#materiales .carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/5_pegamento.png)
+}
+#materiales .carta:nth-child(6){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/6_silicon.png)
+}
+#materiales .carta:nth-child(7){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/7_tornillos.png)
+}
+#materiales .carta:nth-child(8){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/8_clavos.png)
+}
+#materiales .carta:nth-child(9){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/9_clavillos.png)
+}
+#materiales .carta:nth-child(10){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/10_laca.png)
+}
+#materiales .carta:nth-child(11){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/11_sellador.png)
+}
+#materiales .carta:nth-child(12){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/12_tintes.png)
+}
+#materiales .carta:nth-child(13){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/13_disolvente.png)
+}
+#materiales .carta:nth-child(14){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/14_lijas.png)
+}
+#materiales .carta:nth-child(15){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/15_tapa_canto.png)
+}
+#materiales .carta:nth-child(16){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/16_cemento_de_contacto.png)
+}
+#materiales .carta:nth-child(17){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/17_brochas.png)
+}
+#materiales .carta:nth-child(18){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/18_acrilica.png)
+}
+#materiales .carta:nth-child(19){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/materiales/19_sellos.png)
+}
+
+
+
+
+
+
+/* imagenes de accesorios */
+
+
+
+
+#accesorios .carta:nth-child(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/accesorios/1_bisagras.png)
+}
+#accesorios .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/accesorios/2_jaladeras.png)
+}
+#accesorios .carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/accesorios/3_rieles.png)
+}
+#accesorios .carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/accesorios/4_tubos.png)
+}
+#accesorios .carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/accesorios/5_socalos.png)
+}
+#accesorios .carta:nth-child(6){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/accesorios/6_accesorio_cocina.png)
+}
+#accesorios .carta:nth-child(7){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/accesorios/7_accesorio_closet.png)
+}
+#accesorios .carta:nth-child(8){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/accesorios/8_iluminacion.png)
+}
+
+
+
+
+
+
+/* imagenes de empleados */
+
+
+
+#empleados .carta:nth-child(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/empleados/1_angelito.png)
+}
+#empleados .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/empleados/2_bryan.png)
+}
+#empleados .carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/empleados/3_byron.png)
+}
+#empleados .carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/empleados/4_tato.png)
+}
+#empleados .carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/empleados/5_fernando.png)
+}
+
+
+
+
+
+
+
+/* imagenes de proyectos */
+
+
+
+
+#proyectos .carta:nth-child(1){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/proyectos/1_cocina.png)
+}
+#proyectos .carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/proyectos/2_closet.png)
+}
+#proyectos .carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/proyectos/3_mesa.png)
+}
+#proyectos .carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/proyectos/4_escritorio.png)
+}
+#proyectos .carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/proyectos/5_silla.png)
+}
+#proyectos .carta:nth-child(6){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(imagenes/proyectos/6_puerta.png)
+}
+
+#registro{
+    margin-bottom: 50px;
+    margin-left: 5px;
+}
+#registro .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#registro .ingrese{
+    margin: 7px;
+}
+#registro button{
+    font-size: .8em;
+}
+#registro .respuesta{
+    font-size: 20px;
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold;
+
+
+}
+
+
+#conoce-suda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 50vh;
+    background-color: rgba(30,30,30);
+    color: white;
+}
+#conoce-suda h2{
+    font-size: 9vw;
+}
+#conoce-suda button{
+    font-size: 5vw;
+}
+
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+footer p{
+    margin: 0;
+    color: rgb(100, 100, 100);
+    padding: 12px;
+    font-size: 1em;
+}
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+
+@media (min-width: 720px) {
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+        font-size: 1em;
+    }
+    header .logo{
+        margin: 0;
+        padding: 25px 30px;
+        font-weight: bold;
+        color: blueviolet;
+        font-size: 1.5em;
+    }
+    nav a{
+        font-size: 1em;}
+        
+
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #herramientas h2{
+        font-size: 3.2em;
+    }
+
+    .menu-horizontal{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .menu-horizontal > li > a{
+        display: block;
+        padding: 13px 15px;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+    .menu-horizontal > li >a:hover{
+        color: blueviolet;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    .menu-horizontal li:hover .menu-vertical{
+        display: block;
+    }
+    .menu-vertical{
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 200px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+    .menu-vertical > li{
+        padding: 15px 20px;
+    }
+    .menu-vertical > li >a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .menu-vertical > li >a:hover{
+        color: blueviolet;
+    }
+
+    #registro .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #registro .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 50px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #registro h2{
+        margin-top: 0px;
+    }
+    #registro .img-container{
+        background-image: url(imagenes/registrate.png);
+        background-size: cover;
+        background-position: center center;
+        width: 600px;
+        height: 400px;
+    }
+    .contenedores .programas{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .contenedores p{
+        display: block;
+        margin-bottom: 30px;
+
+    }
+
+    .contenedores h3{
+        margin-top: 0;
+    }
+    .contenedores .carta{
+        padding: 50px;
+        box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
+        width: 300px;
+    }
+
+    #caracteristicas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #caracteristicas .img-container{
+        background-image: url(imagenes/caracteristicas.png);
+        background-size: cover;
+        background-position: center center;
+        width: 600px;
+        height: 400px;
+    }
+
+    #caracteristicas .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 50px;
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #caracteristicas .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #conoce-suda h2{
+        font-size: 3em;
+    }
+
+    #conoce-suda button{
+        font-size: 1em;
+    }
+
+    footer .container{
+        justify-content: space-between;
+    }
+    .redes{
+        align-items: center;
+    }
+}
